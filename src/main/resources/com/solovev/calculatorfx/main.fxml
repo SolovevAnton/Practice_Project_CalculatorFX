@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.solovev.calculatorfx.MainController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="151.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solovev.calculatorfx.controllers.MainController">
+    <children>
+      <Label layoutX="58.0" layoutY="22.0" text="Put fist number here " textAlignment="JUSTIFY" />
 
+        <TextField fx:id="textFieldInput1" layoutX="13.0" layoutY="41.0" prefHeight="25.0" prefWidth="200.0" promptText="Input 1" />
+      <Label layoutX="301.0" layoutY="22.0" text="Put second number here " textAlignment="JUSTIFY" />
+      <TextField fx:id="textFieldOperation" alignment="CENTER" layoutX="229.0" layoutY="40.0" prefHeight="25.0" prefWidth="25.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Label layoutX="214.0" layoutY="22.0" text="Operation" />
+        <TextField fx:id="textFieldInput2" layoutX="268.0" layoutY="40.0" prefHeight="25.0" prefWidth="200.0" promptText="Input2" />
+      <Label layoutX="117.0" layoutY="103.0" prefHeight="48.0" prefWidth="250.0" text="All numbers including result must be in range  of doulble" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="476.0" layoutY="40.0" prefHeight="25.0" prefWidth="25.0" text="=">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="510.0" layoutY="22.0" text="Result" />
+      <TextField fx:id="textFieldResult" layoutX="510.0" layoutY="40.0" prefHeight="50.0" prefWidth="250.0" promptText="Result" />
+      <Button fx:id="buttonPlus" layoutX="216.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+" />
+      <Button fx:id="buttonMinus" layoutX="242.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
+      <Button fx:id="buttonMultiply" layoutX="191.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="x" />
+      <Button fx:id="buttonDivide" layoutX="268.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="/" />
+    </children>
 </AnchorPane>
