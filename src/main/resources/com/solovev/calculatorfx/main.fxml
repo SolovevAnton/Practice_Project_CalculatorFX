@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="125.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solovev.calculatorfx.controllers.MainController">
-    <Label layoutX="58.0" layoutY="22.0" text="Put fist number here " textAlignment="JUSTIFY"/>
+    <Label layoutX="58.0" layoutY="22.0" text="Put first number here " textAlignment="JUSTIFY"/>
 
     <TextField fx:id="textFieldInput1" layoutX="13.0" layoutY="41.0" prefHeight="25.0" prefWidth="200.0"
                promptText="Input 1"/>
