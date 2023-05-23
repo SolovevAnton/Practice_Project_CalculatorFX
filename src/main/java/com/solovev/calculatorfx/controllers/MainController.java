@@ -19,14 +19,13 @@ public class MainController {
     public TextField textFieldResult;
     @FXML
     public Label labelWarningText;
-    private String boundaries = String.format("%s from: %s to %s", Double.class.getSimpleName(), Double.MIN_VALUE, Double.MAX_VALUE);
+    private final String boundaries = String.format("%s from: %s to %s", Double.class.getSimpleName(), Double.MIN_VALUE, Double.MAX_VALUE);
     @FXML
     public void initialize(){
         String boundaries = String.format("%s from: %s to %s", Double.class.getSimpleName(), Double.MIN_VALUE, Double.MAX_VALUE);
         labelWarningText.setText(labelWarningText.getText() + boundaries);
     }
 
-    //TODO ? Should number format exc be caught here?
     /**
      * Method performs given operation to the inputs, writes result to result, and operation sign to OperationFiled
      *
